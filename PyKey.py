@@ -1,4 +1,4 @@
-eimport pynput
+import pynput
 from pynput.keyboard import Key,Listener
 import webbrowser
 import os, atexit
