@@ -33,7 +33,7 @@ Just like any other malicious program that sends reports to the attackers, keylo
 
 ## About This Project
 
-This keylogger project, authored by V. Vayush, was made around 2021 and is still in development. It reads your keystrokes and stores them in a text file.
+This keylogger project, authored by V. Vayush, was made around 2024 and is still in development. It reads your keystrokes and stores them in a text file.
 
 ## Author
 
