@@ -1,6 +1,6 @@
 ##[KEYLOGGER]
 
-A project made by V.Vayush for pursuing Cyber security.
+A project made by V.Vayush and G.S.Suraj for pursuing Cyber security.
 hahaha this one's a doozy.
 
 it reads your key strokes and stores it in a text file. 
@@ -37,7 +37,7 @@ This keylogger project, authored by V. Vayush, was made around 2024 and is still
 
 ## Author
 
-- **V. Vayush**
+- **V. Vayush & G.S.Suraj**
 
 For more details, visit [Cyber Security News](https://cybersecuritynews.com/keylogger/).
 
